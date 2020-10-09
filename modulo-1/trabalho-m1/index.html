@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de cores</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="top">
+      <h1>Simulador RGB</h1>
+
+      <div class="modal">
+        <label for="vol">(R) Red:</label>
+        <input
+          type="range"
+          id="rangeRed"
+          name="red"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input
+          type="number"
+          id="inputRed"
+          value="0"
+          min="0"
+          max="255"
+          disabled
+        /><br />
+
+        <label for="vol">(G) Green:</label>
+        <input
+          type="range"
+          id="rangeGreen"
+          name="green"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input
+          type="number"
+          id="inputGreen"
+          value="0"
+          min="0"
+          max="255"
+          disabled
+        /><br />
+
+        <label for="vol">(B) Blue:</label>
+        <input
+          type="range"
+          id="rangeBlue"
+          name="blue"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input
+          type="number"
+          id="inputBlue"
+          value="0"
+          min="0"
+          max="255"
+          disabled
+        /><br />
+      </div>
+      <div class="cor" id="cor"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
